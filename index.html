@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRERIA DEV DRAGON </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navegation">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="main">
+                <!-- <a id="btnCarrito" href="#carrito" class="inicio"> <i class="fas fa-shopping-cart"></i> Carro</a> -->
+                <button id="btnCarrito" href="#carrito" class="inicio"> <a class="carrito" href="#carrito"><i class="fas fa-shopping-cart"></i> Carro</a> </button>
+                <a href="#catalogo" class="servicios">Ir a Catalogo</a>
+            </div>
+            <div class="menu-movil">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <div class="slideshow">
+		<ul class="slider">
+			<li>
+				<img src="img/1.jpg" alt="">
+				<section class="caption">
+					<h2>libros de programación</h2>
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p> -->
+				</section>
+			</li>
+			<li>
+				<img src="img/2.jpg" alt="">
+				<section class="caption">
+					<h2>Versiones Digitales</h2>
+					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis ipsa, id quidem quisquam unde.</p> -->
+				</section>
+			</li>
+		</ul>
+
+		<ol class="pagination">
+			
+		</ol>
+	
+		<div class="left">
+			<span class="fa fa-chevron-left"></span>
+		</div>
+
+		<div class="right">
+			<span class="fa fa-chevron-right"></span>
+		</div>
+	</div> <!-- slidershow -->
+    <section id="catalogo" class="catalogo clearfix">
+        <h2 class="title" >catalogo</h2>
+        <div class="libro">
+            <img src="img/libro_1.jpg" alt="">
+            <div class="detalle">
+                <p>Alexander Cane</p>
+                <p>Programación con Python</p>
+                <span>15$</span>
+                <input id="libro1" class="unidades" type="number" placeholder="0" min="0" max="5" >
+
+            </div>
+        </div>
+        <div class="libro">
+            <img src="img/libro_2.jpg" alt="">
+            <div class="detalle">
+                <p>Alfredo Moreno Muñoz</p>
+                <p>Python para Principiantes</p>
+                <span>25$</span>
+                <input id="libro2" class="unidades" type="number" placeholder="0" min="0" max="5">
+            </div>
+        </div>
+        <div class="libro">
+            <img src="img/libro_3.jpg" alt="">
+            <div class="detalle">
+                <p>Alexander Cane</p>
+                <p>Programación para principiantes</p>
+                <span>25$</span>
+                <input id="libro3" class="unidades" type="number" placeholder="0" min="0" max="5">
+            </div>
+        </div>
+        <div class="libro">
+            <img src="img/libro_4.png" alt="">
+            <div class="detalle">
+                <p>Rafael Goméz Blanes</p>
+                <p>El libro negro del programador</p>
+                <span>25$</span>
+                <input id="libro4" class="unidades" type="number" placeholder="0" min="0" max="5">
+            </div>
+        </div>
+    </section>
+    <section class="pasarela">
+        <h2 class="title">Pagos</h2>
+        <div class="pagos ">
+           <!--  <div  class="precio box">
+                <p id="precio"></p>
+            </div> -->
+            <div id="carrito" class="articulos box">
+                <table>
+                    <tr>
+                        <th>Articulos del Carrito</th>
+                        <th>Unidades</th>
+                    </tr>
+                    <tr>
+                        <td id="print1"></td>
+                        <td id="unidad1"></td>
+                    </tr>
+                    <tr>
+                        <td id="print2"></td>
+                        <td id="unidad2"></td>
+                    </tr>
+                    <tr>
+                        <td id="print3"></td>
+                        <td id="unidad3"></td>
+                    </tr>
+                    <tr>
+                        <td id="print4"></td>
+                        <td id="unidad4"></td>
+                    </tr>
+                </table>
+            </div>
+            <div  class="precio box">
+                <h2>TÚ COMPRA ES POR VALOR DE: </h2>
+                <p id="precio"></p>
+            </div>
+            <div class="total">
+                <button id="pagar">pagar</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/function.js"></script>
+    
+</body>
+</html>
